@@ -32,11 +32,6 @@ public enum PlayerCharacter {
     public int xDrawOffset, yDrawOffset;
 
 
-    /*
-     private float xDrawOffset = 21 * Game.SCALE;
-    private float yDrawOffset = 4 * Game.SCALE;
-     */
-
     PlayerCharacter(int spriteA_IDLE, int spriteA_RUNNING, int spriteA_JUMP, int spriteA_FALLING, int spriteA_ATTACK, int spriteA_HIT, int spriteA_DEAD,
                     int rowIDLE, int rowRUNNING, int rowJUMP, int rowFALLING, int rowATTACK, int rowHIT, int rowDEAD,
                     String playerAtlas, int rowA, int colA, int spriteW, int spriteH,

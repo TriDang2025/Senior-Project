@@ -22,8 +22,7 @@ public class Player extends Entity {
     private boolean moving = false, attacking = false;
     private boolean left, right, jump;
     private int[][] lvlData;
-//    private float xDrawOffset = 21 * Game.SCALE;
-//    private float yDrawOffset = 4 * Game.SCALE;
+
 
     // Jumping / Gravity
     private float jumpSpeed = -2.25f * Game.SCALE;
@@ -224,7 +223,7 @@ public class Player extends Entity {
 
     public void render(Graphics g, int lvlOffset) {
         g.drawImage(animations[playerCharacter.getRowIndex(state)][aniIndex], (int) (hitbox.x - playerCharacter.xDrawOffset) - lvlOffset + flipX, (int) (hitbox.y - playerCharacter.yDrawOffset + (int) (pushDrawOffset)), width * flipW, height, null);
-        drawHitbox(g, lvlOffset);
+//        drawHitbox(g, lvlOffset);
 //		drawAttackBox(g, lvlOffset);
         drawUI(g);
     }
